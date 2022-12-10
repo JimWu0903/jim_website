@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Jim's website</title>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div>
+          <img
+            src="image/素描.jpeg"
+            alt="my logo"
+            class="nav__logo"
+            id="logo"
+          />
+          <span>Jim's website</span>
+        </div>
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">skills</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">experience</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">hobbies</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#"
+              >contact me</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title">
+        <h1>
+          About
+          <!-- highlight effect -->
+          <span class="highlight">me</span>
+        </h1>
+        <h4>
+          擁有15年IC封測製程經驗，主要工作是解決問題及優化流程<br />
+          在職涯中發掘出對程式的興趣。因緣際會下搬到台北生活<br />
+          利用這個短暫休息的機會參加課程學習程式。<br />
+          希望結合我以往豐富的實務經驗，開啟更寬闊的道路。
+        </h4>
+        <button class="btn--text btn--scroll-to">more &DownArrow;</button>
+        <img
+          src="image/about_me.png"
+          data-src="image/about_me.png"
+          class="header__img lazy-img"
+          alt="my career"
+        />
+      </div>
+    </header>
+
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">skills</h2>
+        <h3 class="section__header">透過各種途逕持續學習，開發技能樹</h3>
+      </div>
+      <div class="skill">
+        <div class="skill__tab-container">
+          <button
+            class="btn skill__tab skill__tab--1 skill__tab--active"
+            data-tab="1"
+          >
+            <img class="skill__tab__img" src="image/pgm/backend.png" />
+            <span> backend</span>
+          </button>
+          <button class="btn skill__tab skill__tab--2" data-tab="2">
+            <img class="skill__tab__img" src="image/pgm/frontend.png" />
+            <span> frontend</span>
+          </button>
+          <button class="btn skill__tab skill__tab--3" data-tab="3">
+            <img class="skill__tab__img" src="image/pgm/deployment.png" />
+            <span> deployment</span>
+          </button>
+        </div>
+        <div class="skill__content skill__content--1 skill__content--active">
+          <div class="skill__wrapper__grid">
+            <img class="skill__img" src="image/pgm/java.png" /><br />
+            <span class="skill__text">Java</span>
+          </div>
+          <div class="skill__wrapper__grid">
+            <img class="skill__img" src="image/pgm/springboot.png" /><br />
+            <span class="skill__text">SpringBoot</span>
+          </div>
+          <div class="skill__wrapper__grid">
+            <img class="skill__img" src="image/pgm/springsecurity.png" /><br />
+            <span class="skill__text">SpringSecurity</span>
+          </div>
+          <div class="skill__wrapper__grid">
+            <img class="skill__img" src="image/pgm/mysql.png" /><br />
+            <span class="skill__text">MySQL</span>
+          </div>
+          <div class="skill__wrapper__grid">
+            <img class="skill__img" src="image/pgm/mybatis.png" /><br />
+            <span class="skill__text">MyBatis</span>
+          </div>
+          <br />
+        </div>
+
+        <div class="skill__content skill__content--2">
+          <div class="skill__wrapper__grid">
+            <img class="skill__img" src="image/pgm/javascript.png" /><br />
+            <span class="skill__text">JavaScript</span>
+          </div>
+          <div class="skill__wrapper__grid">
+            <img class="skill__img" src="image/pgm/html.png" /><br />
+            <span class="skill__text">HTML</span>
+          </div>
+          <div class="skill__wrapper__grid">
+            <img class="skill__img" src="image/pgm/css.png" /><br />
+            <span class="skill__text">CSS</span>
+          </div>
+          <div class="skill__wrapper__grid">
+            <img class="skill__img" src="image/pgm/vue.png" /><br />
+            <span class="skill__text">Vue.js</span>
+          </div>
+        </div>
+
+        <div class="skill__content skill__content--3">
+          <div class="skill__wrapper__grid">
+            <img class="skill__img" src="image/pgm/github2.png" /><br />
+            <span class="skill__text">GitHub</span>
+          </div>
+          <div class="skill__wrapper__grid">
+            <img class="skill__img" src="image/pgm/netlify.png" /><br />
+            <span class="skill__text">Netlify</span>
+          </div>
+          <div class="skill__wrapper__grid">
+            <img class="skill__img" src="image/pgm/gcp.png" /><br />
+            <span class="skill__text">GCP</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">experience</h2>
+        <h3 class="section__header">競競業業，努力不懈</h3>
+      </div>
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1"
+          >
+            <span>2005~2009</span><br />助理工程師
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span>2009~2013</span><br />設備工程師
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>2013~2015</span><br />製程工程師
+          </button>
+          <button class="btn operations__tab operations__tab--4" data-tab="4">
+            <span>2015~2021</span><br />製程工程課長
+          </button>
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <div class="operations__icon operations__icon--1">
+            <img class="operations__icon__img--1" src="image/樹苗.png" />
+          </div>
+          <div class="operations__text">
+            <h5 class="operations__header">
+              矽品精密工業股份有限公司<br />
+              測試工程部設備課
+            </h5>
+            <p>
+              重要工作內容:<br />
+              1. 故障排除：機台故障排除/低良率OCAP執行<br />
+              2. 架機/Setup：移機定位水平及點位校正，Setup驗收並放行量產
+            </p>
+          </div>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <img class="operations__icon__img--2" src="image/中樹苗.png" />
+          </div>
+          <div class="operations__text">
+            <h5 class="operations__header">
+              矽品精密工業股份有限公司<br />
+              測試工程部設備課
+            </h5>
+            <p>
+              重要工作內容:<br />
+              1. 分析需求：機台故障原因分析/針痕清針紙異常分析<br />
+              2. 標準化：清針紙分析SOP/懸臂探針卡作業SOP
+            </p>
+          </div>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <img class="operations__icon__img--3" src="image/小樹.png" />
+          </div>
+          <div class="operations__text">
+            <h5 class="operations__header">
+              矽品精密工業股份有限公司<br />
+              測試工程部
+            </h5>
+            <p>
+              重要工作內容:<br />
+              1. 分析需求：Yield monitoring/Fail bin/製程異常<br />
+              2. 專案開發：生產工具/介面優化，維修指南<br />
+              3. 組織溝通：NPI/PRU/Quality跨部門合作提供製程專業建議及對策
+            </p>
+          </div>
+        </div>
+        <div class="operations__content operations__content--4">
+          <div class="operations__icon operations__icon--4">
+            <img class="operations__icon__img--4" src="image/大樹.png" />
+          </div>
+          <div class="operations__text">
+            <h5 class="operations__header">
+              矽品精密工業股份有限公司<br />
+              測試工程部
+            </h5>
+            <p>
+              重要工作內容:<br />
+              1. 分析需求：8D problem-solving/NPI risk assessment/Change
+              control<br />
+              2. 專案開發：跨職能/部門溝通並排除障礙完成專案<br />
+              3.
+              客戶服務：每週與客戶開會review各KPI指標並執行對策，保持業界領先地位<br />
+              4. 人才培育 : PM分析法/PDSM手法
+              review工程師分析能力並回饋建議持續精進
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--3">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">INTERESTS</h2>
+        <h3 class="section__header">喜歡運動，勇於嘗試不設限</h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              藉由 <span class="highlight2">運動</span> 與自己的身體對話
+            </h5>
+            <img class="testimonial_image" src="image/運動.png" />
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              <span class="highlight2">嘗試</span> 不同活動，擴展視野
+            </h5>
+            <img class="testimonial_image" src="image/休閒.png" />
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              喜歡打電動，尤其喜歡有 <span class="highlight2">挑戰性</span> 的
+            </h5>
+            <img class="testimonial_image" src="image/playgame.png" />
+          </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="footer__copyright">
+        &copy; 2022 Copyright by
+        <a
+          class="footer__link github-link"
+          target="_blank"
+          href="https://github.com/JimWu0903/"
+          >Jim Wu</a
+        >
+      </p>
+    </footer>
+    <!--contact me hidden content-->
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <div class="contact_list">
+        <ul class="contact__nav">
+          <li class="contact__item">
+            <img src="image/pgm/github2.png" class="contact__icon" />
+            <a class="contact__link" href="https://github.com/JimWu0903/">
+              &nbspGitHub
+            </a>
+          </li>
+          <li class="contact__item">
+            <img src="image/gmail.png" class="contact__icon" />
+            <a class="contact__link" href="mailto:jimwu0903@gmail.com">
+              &nbspGmail
+            </a>
+          </li>
+          <li class="contact__item">
+            <img src="image/video_game.png" class="contact__icon" />
+            <a class="contact__link" href="https://gaiyong.net">
+              &nbspMy Web game project
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>
