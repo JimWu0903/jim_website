@@ -178,7 +178,8 @@ const loadImg = function (entries, observer) {
   const [entry] = entries;
 
   if (!entry.isIntersecting) return;
-
+  //src= low resolution image
+  //data-src = high resolution image, once load event listened replace image
   // Replace src with data-src
   entry.target.src = entry.target.dataset.src;
 
